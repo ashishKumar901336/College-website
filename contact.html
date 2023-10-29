@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | NSUT</title>
+    <link rel="icon" href="Images/favicon.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <nav>
+
+            <a href="index.html"><img src="Images/logo.png"></a>
+            <h1>Netaji Subhas University of Technology</h1>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><audio controls src="Images/kulgeet_mp3.mp3"></audio></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+
+        <h1>Contact Us</h1>
+
+    </section>
+
+    <!-- Contact Us -->
+
+    <div class="location">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14010.633789636884!2d77.0379647!3d28.6100216!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05dd375e5a13%3A0x108adaa3abe4bd07!2sNetaji%20Subhas%20University%20of%20Technology!5e0!3m2!1sen!2sin!4v1698415188665!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+    </div>
+
+    <div class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Azad Hind Fauj Marg, Dwarka Sector-3, Dwarka 110078</h5>
+                        <p>Delhi, India.</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>011 2500 0268</h5>
+                        <p>Monday - Friday: 9:00 AM to 6:00 PM</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                        <h5>academic@nsut.ac.in</h5>
+                        <p>Monday - Friday: 9:00 AM to 6:00 PM</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact-col">
+
+                <form action="#">
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter your email address" required>
+                    <input type="text" placeholder="Enter your subject" required>
+                    <textarea rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn blue-btn">Send Message</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="row">
+            <div class="foot-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Faculties</a></li>
+                    <li><a href="#">Departments</a></li>
+                    <li><a href="#">Centres</a></li>
+                    <li><a href="#">Facilities</a></li>
+                    <li><a href="#">Notices</a></li>
+                    <li><a href="#">UMS</a></li>
+                </ul>
+            </div>
+
+            <div class="foot-col">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="#">Central Computer Centre</a></li>
+                    <li><a href="#">Campus Life</a></li>
+                    <li><a href="#">University Newsletter</a></li>
+                    <li><a href="#">Educational Programmes</a></li>
+                    <li><a href="#">Social Initiatives</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="foot-col">
+                <h3>Social Media</h3>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i> Youtube</a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                </ul>
+            </div>
+
+            <div class="foot-col">
+                <p>Netaji Subhas University of Technology(NSUT)</p>
+                <p>Formerly Netaji Subhas Institute of Technology(NSIT) <br><br> (Govt. of NCT of Delhi)</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JS for Toggle menu -->
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>

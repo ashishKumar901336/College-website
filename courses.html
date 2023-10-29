@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | NSUT</title>
+    <link rel="icon" href="Images/favicon.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <nav>
+
+            <a href="index.html"><img src="Images/logo.png"></a>
+            <h1>Netaji Subhas University of Technology</h1>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><audio controls src="Images/kulgeet_mp3.mp3"></audio></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+
+        <h1>Courses Offered</h1>
+
+    </section>
+
+
+    <!-- Courses content -->
+
+    <section class="course">
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Undergraduate Programmes</h3>
+                <p>NSUT offers following branches B.Tech Programmes at the Undergraduate Level:</p>
+                <p>
+                    1. B.Tech In Electronics And Communication Engineering <br>
+                    2. B.Tech In Computer Engineering <br>
+                    3. B.Tech In Computer Science And Engineering (With Specialisation In Artificial Lntelligence) <br>
+                    4. B.Tech In Mathematics And Computing <br>
+                    5. B.Tech In Electrical Engineering <br>
+                    6. B.Tech In Instrumentation And Control Engineering <br>
+                    7. B.Tech In Manufacturing Process And Automation Engineering <br>
+                    8. B.Tech In Mechanical Engineering <br>
+                    9. B.Tech In Information Technology <br>
+                    10. B.Tech In Bio-Technology <br>
+                </p>
+            </div>
+
+            <div class="course-col">
+                <h3>Postgraduate Programmes</h3>
+                <p>At the Post-Graduate(M.Tech.) level NSUT has the following programs:</p>
+                <p>
+                    1. M.Tech. In Computer Science <br>
+                    2. M.Tech. In Signal Processing <br>
+                    3. M.Tech. In Embedded System & VLSI <br>
+                    4. M.Tech. In Process Control M.Tech. In Communication And Networking <br>
+                    5. M.Tech. In Industrial Electronics <br>
+                    6. M.Tech. In Mechatronics <br>
+                    7. M.Tech. In Production Engineering <br>
+                    8. M.Tech. In Engineering Management <br>
+                    9. M.Tech. In CAD CAM M. Tech In Manufacturing Process & Automation <br>
+                    10. M.Tech. In Biochemical Engineering <br>
+                    11. M.Tech. In Bioinformatics M.Tech. In Nano Technology <br>
+                </p>
+            </div>
+
+            <div class="course-col">
+                <h3>Doctorate Programmes</h3>
+                <p>The University offers Doctorate of Philosophy (Ph.D.) degree programmes in following fields:</p>
+                <p>
+                    1. Electronics And Communication Engineering <br>
+                    2. Computer Engineering Instrumentation And Control Engineering <br>
+                    3. Manufacturing Process And Automation Engineering <br>
+                    4. Information Technology <br>
+                    5. Bio-Technology Management Studies <br>
+                    6. Humanities And Social Sciences <br>
+                    7. Mathematics <br>
+                    8. physics <br>
+                    9. Chemistry <br>
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="row">
+            <div class="foot-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Faculties</a></li>
+                    <li><a href="#">Departments</a></li>
+                    <li><a href="#">Centres</a></li>
+                    <li><a href="#">Facilities</a></li>
+                    <li><a href="#">Notices</a></li>
+                    <li><a href="#">UMS</a></li>
+                </ul>
+            </div>
+
+            <div class="foot-col">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="#">Central Computer Centre</a></li>
+                    <li><a href="#">Campus Life</a></li>
+                    <li><a href="#">University Newsletter</a></li>
+                    <li><a href="#">Educational Programmes</a></li>
+                    <li><a href="#">Social Initiatives</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="foot-col">
+                <h3>Social Media</h3>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i> Youtube</a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                </ul>
+            </div>
+
+            <div class="foot-col">
+                <p>Netaji Subhas University of Technology(NSUT)</p>
+                <p>Formerly Netaji Subhas Institute of Technology(NSIT) <br><br> (Govt. of NCT of Delhi)</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JS for Toggle menu -->
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>
